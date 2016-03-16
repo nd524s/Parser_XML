@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/cards"
+       xsi:schemaLocation="http://www.example.com/cards old-cards.xsd">
+    <promotional-card advertising-phone="1947248">
+        <year>1939</year>
+        <thema>clothes</thema>
+        <sending>false</sending>
+        <country>France</country>
+        <valuable>collectional</valuable>
+        <company-name>Gucci</company-name>
+    </promotional-card>
+    <greeting-card>
+        <year>1901</year>
+        <thema>nature</thema>
+        <sending>false</sending>
+        <country>Russia</country>
+        <valuable>historical</valuable>
+        <author>
+            <name>Nikolay Zinkovich</name>
+            <birth-date>15.10.1882</birth-date>
+            <birth-place>Russia</birth-place>
+        </author>
+    </greeting-card>
+    <greeting-card>
+        <year>1890</year>
+        <thema>people</thema>
+        <sending>true</sending>
+        <country>Russia</country>
+        <valuable>historical</valuable>
+        <author>
+            <name>Vladislav Sichevskiy</name>
+            <birth-date>11.08.1810</birth-date>
+            <birth-place>Russia</birth-place>
+        </author>
+    </greeting-card>
+    <greeting-card>
+        <year>1924</year>
+        <thema>nature</thema>
+        <sending>false</sending>
+        <country>USA</country>
+        <valuable>historical</valuable>
+        <author>
+            <name>John Snow</name>
+            <birth-date>15.10.1900</birth-date>
+            <birth-place>USA</birth-place>
+        </author>
+    </greeting-card>
+    <greeting-card>
+        <year>1970</year>
+        <thema>since</thema>
+        <sending>false</sending>
+        <country>USA</country>
+        <valuable>collectional</valuable>
+        <author>
+            <name>Pavel Dechenya</name>
+            <birth-date>12.11.1944</birth-date>
+            <birth-place>Germany</birth-place>
+        </author>
+    </greeting-card>
+    <promotional-card advertising-phone="3019911">
+        <year>1955</year>
+        <thema>building</thema>
+        <sending>true</sending>
+        <country>Great Britain</country>
+        <valuable>collectional</valuable>
+        <company-name>Buildgroup</company-name>
+    </promotional-card>
+    <promotional-card advertising-phone="3023355">
+        <year>1968</year>
+        <thema>sport</thema>
+        <sending>false</sending>
+        <country>USA</country>
+        <valuable>collectional</valuable>
+        <company-name>Nike</company-name>
+    </promotional-card>
+    <promotional-card advertising-phone="7050817">
+        <year>1980</year>
+        <thema>sport</thema>
+        <sending>true</sending>
+        <country>USA</country>
+        <valuable>collectional</valuable>
+        <company-name>Reebok</company-name>
+    </promotional-card>
+    <music-card>
+        <year>1943</year>
+        <thema>architecture</thema>
+        <sending>true</sending>
+        <country>USSR</country>
+        <valuable>thematic</valuable>
+        <author>
+            <name>Taras Tesler</name>
+            <birth-date>15.10.1915</birth-date>
+            <birth-place>Ukraine</birth-place>
+        </author>
+        <song>Vivaldi</song>
+    </music-card>
+    <music-card>
+        <year>1941</year>
+        <thema>since</thema>
+        <sending>true</sending>
+        <country>USSR</country>
+        <valuable>thematic</valuable>
+        <author>
+            <name>Alex Petrushko</name>
+            <birth-date>03.06.1900</birth-date>
+            <birth-place>Ukraine</birth-place>
+        </author>
+        <song>Bah</song>
+    </music-card>
+    <music-card>
+        <year>1920</year>
+        <thema>nature</thema>
+        <sending>true</sending>
+        <country>USSR</country>
+        <valuable>thematic</valuable>
+        <author>
+            <name>Vlad Krasov</name>
+            <birth-date>03.06.1911</birth-date>
+            <birth-place>Belarus</birth-place>
+        </author>
+        <song>Mozart</song>
+    </music-card>
+    <music-card>
+        <year>1928</year>
+        <thema>art</thema>
+        <sending>true</sending>
+        <country>USSR</country>
+        <valuable>collectional</valuable>
+        <author>
+            <name>Igor Novitski</name>
+            <birth-date>09.09.1870</birth-date>
+            <birth-place>Russia</birth-place>
+        </author>
+        <song>Mozart</song>
+    </music-card>
+</cards>

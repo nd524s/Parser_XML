@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/cards"
+        xmlns:tns="http://www.example.com/cards"
+        elementFormDefault="qualified">
+    <element name="card" type="tns:CardType" abstract="true"></element>
+    <element name="greeting-card" type="tns:GreetingCard" substitutionGroup="tns:card"></element>
+    <element name="promotional-card" type="tns:PromotionalCard" substitutionGroup="tns:card"></element>
+    <element name="music-card" type="tns:MusicCard" substitutionGroup="tns:card"></element>
+    
+    <element name="cards">
+        <complexType>
+            <sequence>
+                <element ref="tns:card" minOccurs="0" maxOccurs="unbounded"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="CardType">
+        <sequence>
+            <element name="year" type="string" />
+            <element name="thema" type="string" />
+            <element name="sending" type="boolean" />
+            <element name="country" type="string" />
+            <element name="valuable" type="tns:Valuable" />
+        </sequence>
+    </complexType>
+
+    <complexType name="GreetingCard">
+        <complexContent>
+            <extension base="tns:CardType">
+                <sequence>
+                    <element name="author" type="tns:Author" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="PromotionalCard">
+        <complexContent>
+            <extension base="tns:CardType">
+                <sequence>
+                    <element name="company-name" type="string" />
+                </sequence>
+                <attribute name="advertising-phone" type="integer" use="required"></attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="MusicCard">
+        <complexContent>
+            <extension base="tns:CardType">
+                <sequence>
+                    <element name="author" type="tns:Author" />
+                    <element name="song" type="string" />
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Author">
+        <sequence>
+            <element name="name" type="string" />
+            <element name="birth-date" type="tns:Year" />
+            <element name="birth-place" type="string" />
+        </sequence>
+    </complexType>
+
+    <simpleType name="Year">
+        <restriction base="string">
+            <pattern value="(0?[1-9]|[12][0-9]|3[01])\.(0?[1-9]|1[012])\.((18|19|20)\d\d)" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Valuable">
+        <restriction base="string">
+            <enumeration value="historical"></enumeration>
+            <enumeration value="collectional"></enumeration>
+            <enumeration value="thematic"></enumeration>
+        </restriction>
+    </simpleType>
+</schema>
